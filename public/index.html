@@ -10,50 +10,52 @@
                     <h2> Border Radius Previewer </h2>
                     <div class="box">
                         <div class="circle">
-                            <div class="box-in">
+                            <div id="box" class="box-in">
 
                             </div>
                         </div>
                     </div>
-                    <input class="code" readonly/>
+                    <label>border-radius: </label>
+                    <input class="code" readonly> 
                     <button onclick="copyText()">COPY</button>
                     
                     <form>
                         <div class="group-input">
-                            <label>a</label>
-                            <input type="text" />
+                            <label>border-top-left-radius</label>
+                            <input type="range" min="0" max="100" step="1" onchange='radiusPreviewer("a", this);'/>
                         </div>
                         <div class="group-input">
-                            <label>b</label>
-                            <input type="text" />
+                            <label>border-top-right-radius</label>
+                            <input type="range" min="0" max="100" step="1" onchange='radiusPreviewer("b", this);'/>
                         </div>
                         <div class="group-input">
-                            <label>c</label>
-                            <input type="text" />
+                            <label>border-bottom-right-radius</label>
+                            <input type="range" min="0" max="100" step="1" onchange='radiusPreviewer("c", this);'/>
                         </div>
                         <div class="group-input">
-                            <label>d</label>
-                            <input type="text"/>
+                            <label>border-bottom-left-radius</label>
+                            <input type="range" min="0" max="100" step="1" onchange='radiusPreviewer("d", this);'/>
                         </div>
                         <div class="group-input">
                             <label>e</label>
-                            <input type="text" />
+                            <input type="range" min="0" max="100" step="1" onchange='radiusPreviewer("e", this);'/>
                         </div>
                         <div class="group-input">
                             <label>f</label>
-                            <input type="text" />
+                            <input type="range" min="0" max="100" step="1" onchange='radiusPreviewer("f", this);'/>
                         </div>
                         <div class="group-input">
                             <label>g</label>
-                            <input type="text" />
+                            <input type="range" min="0" max="100" step="1" onchange='radiusPreviewer("g", this);'/>
                         </div>
                         <div class="group-input">
                             <label>h</label>
-                            <input type="text"/>
+                            <input type="range" min="0" max="100" step="1"/>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </body>
+    <script src="../src/scripts/script.js"></script>
 </html>
