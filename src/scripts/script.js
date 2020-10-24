@@ -1,6 +1,6 @@
-function myFunction() {
+function copyText() {
     /* Get the text field */
-    var copyText = document.getElementById("myInput");
+    var copyText = document.getElementById("code");
   
     /* Select the text field */
     copyText.select();
@@ -10,8 +10,8 @@ function myFunction() {
     document.execCommand("copy");
   
     /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
-  }
+    console.log("Copied the text: " + copyText.value);
+}
 
 var boxIn = document.getElementById("box");
 var code = document .getElementsByClassName("code");
