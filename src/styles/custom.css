@@ -1,3 +1,13 @@
+@font-face {
+    font-family: roboto-bold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
 body{
     background: rgb(56,5,242);
     background: radial-gradient(circle, rgba(56,5,242,1) 35%, rgba(21,2,89,1) 100%);
@@ -13,16 +23,31 @@ body{
     align-items: center;
 }
 
-h2{
+h1{
     color: #F2F2F2;
+    font-family: roboto-bold;
 }
+
+label{
+    color: #F2F2F2;
+    font-family: roboto-medium;
+}
+input{
+    font-family: roboto-medium;
+}
+
+.group-input{
+    margin: 5px;
+}   
 
 .box-in{
     width: 350px;
     height: 350px;
 
-    background: rgb(242,211,119);
-    background: radial-gradient(circle, rgba(242,211,119,1) 60%, rgba(242,119,119,1) 100%);
+    background:#837CD9;
+    background: radial-gradient(circle,#837CD9 30%, #1905F2 100%);
+    
+    border: 5px dotted #363359;
 
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
     box-shadow: 15px 5px 15px 5px rgba(0,0,0,0.15);
@@ -30,6 +55,15 @@ h2{
 .box{
     margin-bottom: 15px;
     text-align: center;
+}
+
+.code{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .center{
